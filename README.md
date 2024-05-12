@@ -10,3 +10,28 @@
 - Проверку на то, является ли треугольник прямоугольным 
 
   
+
+GeometrySolutions
+|
+|-- GeometryLib
+|   |-- GeometryLib.sln
+|   |-- GeometryLib
+|       |-- GeometryLib.csproj
+|       |-- Shapes
+|           |-- Circle.cs
+|           |-- Quadrilateral.cs
+|           |-- Triangle.cs
+|           |-- Rhombus.cs
+|       |-- IShape.cs
+|       |-- ShapeFactory.cs
+|       |-- Program.cs
+|
+|-- GeometryApp
+|   |-- GeometryApp.sln
+|   |-- GeometryApp
+|       |-- GeometryApp.csproj
+|       |-- Program.cs
+|
+|-- GeometryLib.Tests
+    |-- GeometryLib.Tests
+        |-- GeometryTests.cs
