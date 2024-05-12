@@ -11,24 +11,26 @@
 
   
 
-GeometrySolutions
-├─ GeometryLib
-│  ├─ GeometryLib.sln
-│  └─ GeometryLib
-│     ├─ GeometryLib.csproj
-│     ├─ Shapes
-│     │  ├─ Circle.cs
-│     │  ├─ Quadrilateral.cs
-│     │  ├─ Triangle.cs
-│     │  └─ Rhombus.cs
-│     ├─ IShape.cs
-│     ├─ ShapeFactory.cs
-│     └─ Program.cs
-├─ GeometryApp
-│  ├─ GeometryApp.sln
-│  └─ GeometryApp
-│     ├─ GeometryApp.csproj
-│     └─ Program.cs
-└─ GeometryLib.Tests
-   └─ GeometryLib.Tests
-      └─ GeometryTests.cs
+GeometrySolutions представляет собой набор инструментов на C#, который позволяет вычислять площади различных геометрических фигур, таких как круги, треугольники, ромбы и четырёхугольники. Проект разделен на три основных компонента: библиотеку `GeometryLib`, демонстрационное приложение `GeometryApp` и набор юнит-тестов `GeometryLib.Tests`.
+
+## Компоненты
+- **GeometryLib**: библиотека классов для расчёта площадей фигур.
+- **GeometryApp**: консольное приложение, демонстрирующее возможности библиотеки.
+- **GeometryLib.Tests**: модуль для тестирования функциональности библиотеки.
+
+## Использование
+Для запуска демонстрационного приложения выполните следующие команды:
+
+`cd GeometryLib.Tests`
+`dotnet test`
+
+Для запуска тестов перейдите в директорию тестов и выполните:
+
+```
+cd GeometryLib.Tests
+dotnet test
+```
+
+## Разработка
+
+Для добавления новых фигур создайте класс в директории `Shapes` в проекте `GeometryLib`, реализуйте интерфейс `IShape` и добавьте соответствующий метод в `ShapeFactory`.
